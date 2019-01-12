@@ -1,8 +1,8 @@
 # squid_proxy_blacklist
 
-squid_proxy_blacklist create rejection domain list of malware websit.
+script to reject malware websites.
 
-ƒ}ƒ‹ƒEƒFƒAƒTƒCƒg‚ÌƒhƒƒCƒ“‚ğ‹‘”Û‚·‚éİ’è‚ğSquid‚É“ü‚ê‚éB
+ãƒãƒ«ã‚¦ã‚§ã‚¢ã‚µã‚¤ãƒˆã®ãƒ‰ãƒ¡ã‚¤ãƒ³ã‚’æ‹’å¦ã™ã‚‹è¨­å®šã‚’Squidã«å…¥ã‚Œã‚‹ã€‚
 
 ## Settings
 
