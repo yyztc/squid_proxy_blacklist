@@ -3,7 +3,7 @@
 BINDIR=`dirname $0`
 LOG_FILE=${BINDIR}/update_proxy_blacklist.log
 TMP_FILE=${BINDIR}/update_proxy_blacklist.tmp
-OUT_FILE=/etc/squid/blacklist.txt
+OUT_FILE=${BINDIR}/blacklist.txt
 
 
 ## Step.1 Clear old tmp list
@@ -23,10 +23,10 @@ echo `date '+%Y/%m/%d %H:%M:%S'` http get malwaredomains.com >> ${LOG_FILE}
 curl http://mirror1.malwaredomains.com/files/domains.txt |\
 perl -wn -e 'if(/^\t([^\t]+)?\t([^\t]+)/){print "$2\n"}' >> ${TMP_FILE} 2>> ${LOG_FILE}
 
-# --- from hosts-file.net
-echo `date '+%Y/%m/%d %H:%M:%S'` http get hosts-file.net >> ${LOG_FILE}
-curl http://hosts-file.net/emd.txt |\
-awk '/^127.0.0.1/ { print $2 }' >> ${TMP_FILE} 2>> ${LOG_FILE}
+# --- from winhelp2002.mvps.org
+echo `date '+%Y/%m/%d %H:%M:%S'` http get winhelp2002.mvps.org >> ${LOG_FILE}
+curl https://winhelp2002.mvps.org/hosts.txt |\
+awk '/^0.0.0.0/ { print $2 }' >> ${TMP_FILE} 2>> ${LOG_FILE}
 
 
 ## Step.3 Sort and Uniq and Add Dot
