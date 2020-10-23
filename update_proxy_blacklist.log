@@ -8,3 +8,8 @@
 2020/10/22 17:47:23 http get malwaredomains.com
 2020/10/22 17:47:27 http get hosts-file.net
 2020/10/22 17:47:27 new black list is lines
+2020/10/22 18:57:54 old black list is 27366 lines
+2020/10/22 18:57:54 http get from malwaredomainlist.com
+2020/10/22 18:57:57 http get malwaredomains.com
+2020/10/22 18:57:58 http get winhelp2002.mvps.org
+2020/10/22 18:57:59 new black list is 34631 lines
