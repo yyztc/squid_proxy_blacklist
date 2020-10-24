@@ -1,10 +1,14 @@
+import config
 import os
 import requests
 
 base_url = "https://otx.alienvault.com/api/v1"
 indicators = "{0}/indicators/export".format(base_url)
 
-otx_api_key = os.environ.get('OTX_API_KEY')
+# Cannot seem to get this to work in VS Code. Fine in terminal however
+#otx_api_key = os.environ.get("OTX_API_KEY")
+otx_api_key = config.api_key
+
 print(otx_api_key)
 
 results = []

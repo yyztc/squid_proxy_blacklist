@@ -1,4 +1,7 @@
+__pycache__
+.pyc
 .vscode
 *.http
 *.json
 *.txt
+config.py
